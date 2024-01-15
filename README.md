@@ -10,6 +10,7 @@ Initial attempt at a self navigating robot with a 3d printed frame
 	B) Stearing Plate Assembly
 	C) Frame Assembly
 04 - Circuit Assembly
+05 - Post Assembly Notes
 
 =============================
 01 - Overview and Materials
@@ -71,3 +72,7 @@ Initial attempt at a self navigating robot with a 3d printed frame
 	On the breadboard, attach the positive terminal of the 9V battery to one of the power rails on the breadboard, and the negative terminal to one of the ground rails. Plug the arduino into the center of the breadboard, so the USB port is at the edge (for ease of reference, it will be assumed that the controller is plugged in to the row 30 side of the breadboard). Connect the 5V pin of the arduino to the other power rail on the breadboard, and connect the ground pin on the arduino to one of the ground rails on the breadboard, and install a jumper wire accross the two ground rails. Connect the 9V rail to the Vin pin of the arduino. 
 	Connect the data pins for the right, center, and left sensors to the A0, A1, and A2 pins respectively and the power pins to the 5V rail (ground can be tied to either ground rail). Connect the signal wire for the servo to pin 9, and the power pin to the 9V rail. Connect the motor driver pins 1, 2, 3, and 4 to arduino pins 5, 4, 3, and 2 respectively, and the power pin to the 9V rail. For the LDC screen, connect the SDA pint to A1, and the SDC to A0, and the power pin to the 5V rail
 
+=============================
+05 - Post Assembly Notes
+=============================
+	Once the assembly is complete, plug the arduino into your PC, and upload the controll script. It is advised that you disconnect the motors for this process. Once the script is uploaded to the arduino, you should be able to disconnect it from the PC (Reconnect the motors) and it should run when you turn the 9V rail on. The turning apparatus, however, may need some fine tuning, based on how it was installed. The lines of code that dictate the angles the servo turns to for center, right, and left turns are on 160, 161, and 164 respectively
